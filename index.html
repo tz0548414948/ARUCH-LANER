@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מכון הערוך לנר</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide/dist/lu.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg" alt="לוגו החברה" class="h-10 w-auto hover:scale-105 transition-transform duration-300" />
+      </div>
+
+      <ul class="hidden md:flex gap-8 font-medium text-gray-900">
+        <li><a href="#home" class="hover:text-rose-900 transition">בית</a></li>
+        <li><a href="#services" class="hover:text-rose-900 transition">שירותים</a></li>
+        <li><a href="#expertise" class="hover:text-rose-900 transition">תחומי התמחות</a></li>
+        <li><a href="#projects" class="hover:text-rose-900 transition">פרויקטים</a></li>
+        <li><a href="#collaboration" class="hover:text-rose-900 transition">שיתופי פעולה</a></li>
+        <li><a href="#gallery" class="hover:text-rose-900 transition">גלריה</a></li>
+        <li><a href="#about" class="hover:text-rose-900 transition">אודות</a></li>
+        <li><a href="#contact" class="hover:text-rose-900 transition">צור קשר</a></li>
+      </ul>
+
+      <div class="md:hidden">
+        <button id="menuBtn">
+          <span class="block w-6 h-0.5 bg-gray-900 mb-1"></span>
+          <span class="block w-6 h-0.5 bg-gray-900 mb-1"></span>
+          <span class="block w-6 h-0.5 bg-gray-900"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden bg-white shadow-md">
+    <ul class="flex flex-col gap-4 px-6 py-4 text-gray-900 font-medium">
+      <li><a href="#home" class="hover:text-rose-900 transition">בית</a></li>
+      <li><a href="#services" class="hover:text-rose-900 transition">שירותים</a></li>
+      <li><a href="#expertise" class="hover:text-rose-900 transition">תחומי התמחות</a></li>
+      <li><a href="#projects" class="hover:text-rose-900 transition">פרויקטים</a></li>
+      <li><a href="#collaboration" class="hover:text-rose-900 transition">שיתופי פעולה</a></li>
+      <li><a href="#gallery" class="hover:text-rose-900 transition">גלריה</a></li>
+      <li><a href="#about" class="hover:text-rose-900 transition">אודות</a></li>
+      <li><a href="#contact" class="hover:text-rose-900 transition">צור קשר</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero with Background Image -->
+  <section id="home" class="pt-24 relative min-h-screen">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('hero.jpg');"></div>
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="container mx-auto px-6 text-center py-28 relative z-10">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+        מכון הערוך לנר
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 mb-6">
+        מחקר, פיענוח כת"י, ופרויקטים מקצועיים.
+      </p>
+      <a href="#contact" class="inline-block bg-rose-900 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-rose-800 transition shadow-md">
+        צרו קשר עכשיו
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+<section id="services" class="container mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold text-gray-900 text-center mb-14">
+    השירותים שלנו
+  </h2>
+
+  <div class="max-w-3xl mx-auto space-y-6">
+
+    <!-- Service Item -->
+    <div class="flex items-start gap-4 bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition duration-300">
+      <div class="w-3 h-3 bg-rose-900 rounded-full mt-3"></div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+          מחקר היסטורי
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          מחקר אקדמי מעמיק, תיעוד היסטורי וניתוח מקורות ברמה מקצועית גבוהה
+          חיפוש שורשים משפחתיים
+          פענוח כיתובים על מצבות
+          ליקוט ועריכת חומר לתולדות גדולי ישראל
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="flex items-start gap-4 bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition duration-300">
+      <div class="w-3 h-3 bg-rose-900 rounded-full mt-3"></div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+          פיענוח כתבי יד
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          זיהוי ופענוח חתימות גדולי ישראל
+          פיענוח כתבי יד בעיקר כתב אשכנזי בעברית, ארמית ויידיש
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="flex items-start gap-4 bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition duration-300">
+      <div class="w-3 h-3 bg-rose-900 rounded-full mt-3"></div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+          עריכה והוצאה לאור
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+         עריכת כתבי יד עם הערות השלמות ומקורות
+         מבואות לספרים
+         מבואות לספרים
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Expertise -->
+  <section id="expertise" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">תחומי התמחות</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition card-hover">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="book-open" class="text-rose-900 w-12 h-12"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 text-center mb-2">מחקר</h3>
+          <p class="text-gray-600 text-center">  
+            מחקר אקדמי, תיעוד היסטורי, וניתוח מקורות.
+          </p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition card-hover">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="file-text" class="text-rose-900 w-12 h-12"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 text-center mb-2">פיענוח כת"י</h3>
+          <p class="text-gray-600 text-center">
+            פיענוח כתבי יד, תמלול, ושחזור טקסטים עתיקים.
+          </p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition card-hover">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="search" class="text-rose-900 w-12 h-12"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 text-center mb-2">שירותים נוספים</h3>
+          <p class="text-gray-600 text-center">
+            ייעוץ, עריכה מקצועית, והדרכה בתחום.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+<section id="projects" class="container mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">פרויקטים</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Project 1 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition duration-300">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-3">הוצאה לאור</h3>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        פרויקט הוצאה לאור הכולל עריכה, עיצוב והפצה מקצועית.
+      </p>
+      <a href="project-1.html"
+         class="block text-center bg-rose-900 text-white py-3 rounded-lg hover:bg-rose-800 transition">
+        מעבר לעמוד הפרויקט
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition duration-300">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-3">כתבות ומאמרים</h3>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        כתיבה, עריכה ופרסום מאמרים מקצועיים בתחום המחקר וההיסטוריה.
+      </p>
+      <a href="project-2.html"
+         class="block text-center bg-rose-900 text-white py-3 rounded-lg hover:bg-rose-800 transition">
+        מעבר לעמוד הפרויקט
+      </a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition duration-300">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-3">תיעוד ארכיוני</h3>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        שימור, קטלוג וסריקה של חומרי ארכיון היסטוריים.
+      </p>
+      <a href="project-3.html"
+         class="block text-center bg-rose-900 text-white py-3 rounded-lg hover:bg-rose-800 transition">
+        מעבר לעמוד הפרויקט
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Collaboration -->
+  <section id="collaboration" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">שיתופי פעולה</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition card-hover">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">מוסדות אקדמיים</h3>
+          <p class="text-gray-600">
+            שיתופי פעולה עם אוניברסיטאות ומכונים מחקריים.
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition card-hover">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">ארכיונים</h3>
+          <p class="text-gray-600">
+            עבודה משותפת עם ארכיונים ועמותות לשימור ידע.
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition card-hover">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">מיזמים ציבוריים</h3>
+          <p class="text-gray-600">
+            פרויקטים משותפים לקהילה ולתרבות.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">גלריה</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="gallery1.jpg" alt="תמונה 1" class="w-full h-56 object-cover cursor-pointer gallery-item">
+      </div>
+      <div class="overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="gallery2.jpg" alt="תמונה 2" class="w-full h-56 object-cover cursor-pointer gallery-item">
+      </div>
+      <div class="overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="gallery3.jpg" alt="תמונה 3" class="w-full h-56 object-cover cursor-pointer gallery-item">
+      </div>
+      <div class="overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="gallery4.jpg" alt="תמונה 4" class="w-full h-56 object-cover cursor-pointer gallery-item">
+      </div>
+      <div class="overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="gallery5.jpg" alt="תמונה 5" class="w-full h-56 object-cover cursor-pointer gallery-item">
+      </div>
+      <div class="overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="gallery6.jpg" alt="תמונה 6" class="w-full h-56 object-cover cursor-pointer gallery-item">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+    <div class="relative">
+      <button id="closeLightbox" class="absolute top-2 left-2 text-white text-2xl">✕</button>
+      <img id="lightboxImg" src="" alt="Lightbox" class="max-w-full max-h-screen rounded-lg">
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="bg-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">מי אנחנו?</h2>
+      <p class="text-gray-700 max-w-3xl mx-auto">
+        הרב יהודה אהרן הלוי הורוויץ מ.א.
+יליד מנצ'סטר אנגליה. בוגר ישיבות באר יעקב וחברון, מוסמך לרבנות ובעל תואר ראשון
+מאוניברסיטת בר אילן ותואר שני מהאוניברסיטה העברית.
+חוקר גנאלוגיה ותולדות רבנים, מעל ארבעה עשורים. על בסיס ידע רב שרכש, פרסם ותרם
+מידיעותיו למאות ספרים, מאמרים ומחקרים, והשתתף בפרויקטים בתחום הביבליוגראפי ופענוח
+כתבי יד. שימש כרב, חזן ומורה בארץ ובחו"ל. הצליח לחבר אנשים לשורשי משפחותיהם וקהילות
+מוצאם. הדריך מסעות שורשים באירופה.
+דובר עברית, אנגלית ואידיש כשפת אם, ובעל יכולת שיחה בסיסית בעוד שפות אירופיות.
+
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">צרו קשר</h2>
+
+    <div id="successMessage" class="hidden max-w-xl mx-auto mb-6 bg-green-100 border border-green-300 text-green-800 px-6 py-4 rounded-xl text-center">
+      ✅ ההודעה נשלחה בהצלחה! נחזור אליך בהקדם.
+    </div>
+
+    <form id="contactForm" class="max-w-xl mx-auto space-y-6 bg-white p-8 rounded-2xl shadow-lg"
+          action="https://formsubmit.co/yudaron@yahoo.com" method="POST">
+      <input type="hidden" name="_subject" value="פנייה חדשה מהאתר – מכון הערוך לנר">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">שם מלא</label>
+        <input id="name" name="name" type="text" required
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-200"
+               placeholder="הכנס שם">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">אימייל</label>
+        <input id="email" name="email" type="email" required
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-200"
+               placeholder="דוא\"ל">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">הודעה</label>
+        <textarea id="message" name="message" required
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-200"
+                  rows="5" placeholder="כתבו כאן..."></textarea>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-rose-900 transition">
+        שלח הודעה
+      </button>
+    </form>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a id="whatsappFloating"
+     target="_blank"
+     aria-label="שלח הודעה ב-WhatsApp"
+     class="fixed bottom-6 left-6 z-50 flex items-center justify-center
+            w-14 h-14 rounded-full bg-green-600 text-white text-3xl
+            shadow-xl hover:bg-green-500 hover:scale-110 transition">
+    💬
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2026 כל הזכויות שמורות.</p>
+      <div class="flex justify-center gap-6 mt-3 text-xl">
+        <a href="#" class="hover:text-rose-700 transition"><i data-lucide="facebook"></i></a>
+        <a href="#" class="hover:text-rose-700 transition"><i data-lucide="instagram"></i></a>
+        <a href="#" class="hover:text-rose-700 transition"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Lucide icons init
+    window.addEventListener('load', () => {
+      lucide.replace();
+    });
+
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Project Modal
+    function openProject(id) {
+      const modal = document.getElementById('projectModal');
+      const content = document.getElementById('projectContent');
+
+      let html = '';
+
+      if (id === 'proj1') {
+        html = `
+          <h2 class="text-2xl font-bold mb-4">הו"ל - פרויקט</h2>
+          <p class="text-gray-700 mb-4">
+            פרויקט הוצאה לאור כולל עריכה, עיצוב, בקרה איכות והפצה.
+          </p>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>עריכה לשונית ותוכן</li>
+            <li>עיצוב גרפי ופריסת עמודים</li>
+            <li>תיאום עם הוצאות לאור</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-rose-900 transition">
+            צרו קשר לפרויקט
+          </a>
+        `;
+      }
+
+      if (id === 'proj2') {
+        html = `
+          <h2 class="text-2xl font-bold mb-4">כתבות - פרויקט</h2>
+          <p class="text-gray-700 mb-4">
+            כתיבת כתבות, מאמרים ופרסומים מקצועיים בתחום ההיסטוריה והמחקר.
+          </p>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>כתיבה עיתונאית ומקצועית</li>
+            <li>עריכה לשונית</li>
+            <li>פרסום במדיה ובאתרים</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-rose-900 transition">
+            צרו קשר לפרויקט
+          </a>
+        `;
+      }
+
+      if (id === 'proj3') {
+        html = `
+          <h2 class="text-2xl font-bold mb-4">תיעוד ארכיוני - פרויקט</h2>
+          <p class="text-gray-700 mb-4">
+            שימור, תיעוד וקטלוג חומרי ארכיון כולל סריקה וארגון.
+          </p>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>סריקה וקטלוג דיגיטלי</li>
+            <li>ארגון ומיון מסמכים</li>
+            <li>תיעוד היסטורי ושימור</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-rose-900 transition">
+            צרו קשר לפרויקט
+          </a>
+        `;
+      }
+
+      content.innerHTML = html;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProject() {
+      const modal = document.getElementById('projectModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Gallery Lightbox
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        lightboxImg.src = item.src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      });
+    });
+
+    closeLightbox.addEventListener('click', () => {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+      }
+    });
+
+    // Contact Form with FormSubmit (AJAX)
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      form.reset();
+      successMessage.classList.remove('hidden');
+      successMessage.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // WhatsApp floating button + text from form
+    const whatsappFloating = document.getElementById('whatsappFloating');
+
+    function updateWhatsAppLink() {
+      const name = document.getElementById('name').value || '';
+      const email = document.getElementById('email').value || '';
+      const message = document.getElementById('message').value || '';
+
+      const text = `
+שלום,
+שמי ${name}
+אימייל: ${email}
+
+${message}
+      `.trim();
+
+      const phone = '972556633180'; // ← החלף למספר שלך
+      whatsappFloating.href = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    }
+
+    ['name', 'email', 'message'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('input', updateWhatsAppLink);
+    });
+
+    updateWhatsAppLink();
+
+  </script>
+
+</body>
+</html>
